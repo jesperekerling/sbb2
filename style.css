@@ -59,6 +59,7 @@ h2 {
 .featured-articles .main-article {
     grid-column: 1/3;
     grid-row: 1/3;
+    height: unset;
 }
 .featured-articles .article {
     background: url(https://source.unsplash.com/featured/300x202);
@@ -78,18 +79,25 @@ h2 {
 .featured-articles .article5 {
     background: url(https://source.unsplash.com/featured/300x205);
 }
-.featured-articles .article-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(#000,#fff);
-    z-index: 1;
-}
+
 .featured-articles .article-content {
     z-index: 2;
 }
-.featured-articles .article-play-icon {
+/*
+.featured-articles .article-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#000,#000);
+    z-index: 1;
+}
+*/
+.featured-articles .main-article-play-icon {
     z-index: 3;
     color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .article-header {
     color: #FFFFFF;
