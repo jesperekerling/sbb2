@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: cadetblue;
+            padding: 16px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+            padding: 0;
+        }
+        .nav-list li a,
+        .nav-list li a:link {
+            color: #fff;
+            text-decoration: none;
+            transition: all 1.2s;
+        }
+
+        /* Pseudo selectors */
+        .nav-list li a:visited {
+            color: blanchedalmond;
+        }
+        .nav-list li a:hover {
+            color: #000;
+        }
+        .newsletter {
+            background-color: #eee;
+            padding: 24px 16px;
+        }
+        .newsletter input[type="email"] {
+            border: 0;
+            padding: 8px 24px;
+            border-radius: 2px;
+        }
+        .newsletter button {
+            border: 1px solid #fff;
+            padding: 8px 24px;
+            border-radius: 2px;
+            background-color: #606060;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            border-radius: 100px;
+
+        }
+        .newsletter button:hover {
+            background-color: #000;
+            transform: translateY(2px);
+        }
+        .newsletter button:active {
+            transform: translateY(-2px);
+        }
+        .newsletter input:focus {
+            background-color: orange;
+            transform: rotate(12deg);
+        }
+        .register-form {
+            background-color: #606060;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .register-form input {
+            border: 0;
+            outline: 0;
+            padding: 8px 16px;
+            border-bottom: 2px solid #fff;
+        }
+        .register-form input:focus {
+            border-bottom: 2px solid orange;
+        }
+        .register-form input:focus::placeholder {
+            color: orange;
+        }
+        a.read-more,
+        a.read-more:link {
+            color: darkorange;
+            text-decoration: none;
+        }
+        a.read-more:visited {
+            color: darkblue;
+        }
+        a.read-more:hover {
+            text-decoration: underline;
+        }
+        .nav-list li:first-child a {
+            background-color: #fff;
+            color: blue;
+            padding: 1rem;
+        }
+        .list2 {
+            background-color: #000;
+            color: aliceblue;
+
+        }
+        .list2 li:nth-child(2) {
+            background-color: wheat;
+        }
+        .list2 li:nth-child(odd) {
+            background-color: #9a9a9a;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="newsletter">
+            <input type="email" placeholder="Email">
+            <button type="submit" class="">Subscribe</button>
+        </div>
+        <form class="register-form">
+            <div>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <input type="text" placeholder="Phone">
+            </div>
+        </form>
+        <h1>Lorem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eligendi cum eum facilis corrupti, veniam unde doloremque ipsum minima repudiandae fuga maxime minus dolor ullam, reprehenderit debitis magni, nesciunt omnis. &nbsp; <a href="index.html" class="read-more" target="_blank">Index.html hejj</a></p>
+        <ul class="list2">
+            <li>Hello world</li>
+            <li>Hello world</li>
+            <li>Hello world</li>
+            <li>Hello world</li>
+            <li>Hello world</li>
+            <li>Hello world</li>
+        </ul>
+    </main>
+</body>
+</html>
