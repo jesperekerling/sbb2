@@ -104,8 +104,52 @@
         }
         .list2 li:nth-child(odd) {
             background-color: #9a9a9a;
+        }        .tag {
+            position: relative;
+            display: inline-block;
         }
 
+        .tag::before {
+            content: "";
+            position: absolute;
+            inset: 0 20px 0 0;
+            width: 20px;
+            background-color: goldenrod;
+            z-index: -2;
+
+            animation: FAnim 1s alternate infinite forwards;
+
+        }
+
+        .tag::after {
+            content: "🏠";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 20px;
+            background-color: #32cd3220;
+            z-index: 1;
+            animation: BAnim 1s alternate infinite forwards;
+        }
+
+        @keyframes FAnim {
+            0% {
+                transform: translate(0%);
+            }
+            100% {
+                transform: translate(300%);
+            }
+        }
+
+        @keyframes BAnim {
+            0% {
+                transform: translate(-0%);
+            }
+            100% {
+                transform: translate(-300%);
+            }
+        }
     </style>
 </head>
 <body>
@@ -148,6 +192,11 @@
             <li>Hello world</li>
             <li>Hello world</li>
         </ul>
+
+
+        <h3 class="tag">Hej hej hej</h3>
+        <p class="tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste totam eum non aliquid reprehenderit quisquam sequi numquam quo sed, odio explicabo unde delectus sit placeat natus. Accusantium, provident tenetur.
+        </p>
     </main>
 </body>
 </html>
